@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #DAF0FF;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blur_bg {
+    position: absolute;
+    width: 257px;
+    height: 457px;
+    left: 477px;
+    top: 119px;
+
+    background: rgba(0, 106, 181, 0.348);
+    filter: blur(70px);
+    border-radius: 39px;
+}
+
+.calulator {
+    width: 16.3rem;
+    height: 26rem;
+    background: linear-gradient(189.95deg, rgba(23, 24, 26, 0.79) -4.98%, #17181A 134.18%);
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    display: none;
+}
+
+#input {
+    background: none;
+    border: none;
+    margin-top: 2rem;
+    width: 100%;
+    height: 5rem;
+    color: #DAF0FF;
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+#input:focus {
+    outline: none;
+}
+
+.line_seprator {
+    width: 100%;
+    background-color: rgba(175, 175, 175, 0.53);
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: .3rem;
+    margin-left: .2rem;
+}
+
+.right_btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 3rem;
+    height: 3rem;
+    background-color: #0d0d0f;
+    color: #005DB2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    border: none;
+    margin-right: .3rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.btn:active {
+    background-color: #0d0d0f9e;
+    color: #005cb29b;
+}
+
+.btn:hover {
+    background-color: #0d0d0f9e;
+    color: #005cb29b;
+    transition: .2s ease-in-out;
+}
+
+#delete, #clear {
+    background-color: #616161;
+    color: #d0d0d0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#delete:active, #clear:active {
+    background-color: #616161ad;
+    color: #d0d0d0a6
+}
+
+#delete:hover, #clear:hover {
+    background-color: #616161ad;
+    color: #d0d0d0a6;
+    transition: .2s ease-in-out;
+}
+
+#operator {
+    background-color: #005DB2;
+    color: #c2e2ff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#operator:active {
+    background-color: rgba(1, 67, 129, 0.674);
+    color: #c2e2ffbd;
+}
+
+#operator:hover {
+    background-color: rgba(1, 67, 129, 0.874);
+    color: #c2e2ffd7;
+    transition: .2s ease-in-out;
+}
+
+.zero{
+    width: 6.4rem;
+}
+
+.equal{
+    height: 6.3rem;
+}

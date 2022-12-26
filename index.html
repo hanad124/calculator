@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="icons8-calculator-64.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="blur_bg"></div>
+        <div class="calulator">
+            <div class="calc_header">
+                <input type="text" id="input"  value="" disabled>
+            </div>
+            <div class="line_seprator"></div>
+            <!-- Buttons -->
+            <div class="buttons">
+                <div class="left_btns">
+                    <input type="button" value="Ac" onclick="clearInput()" class="btn" id="clear"/>
+                    <button id="delete"  onclick="backspace()" class="btn"><i class="bi bi-backspace" ></i></button>
+                    <input type="button" value="/" onclick="addInput('/')"  class="btn" id="operator"/>
+                    <br>
+                    <input type="button" value="7" onclick="addInput(7)"  class="btn"/>
+                    <input type="button" value="8" onclick="addInput(8)"  class="btn"/>
+                    <input type="button" value="9" onclick="addInput(9)"  class="btn"/>
+                    <br>
+                    <input type="button" value="4" onclick="addInput(4)"  class="btn"/>
+                    <input type="button" value="5" onclick="addInput(5)"  class="btn"/>
+                    <input type="button" value="6" onclick="addInput(6)"  class="btn"/>
+                    <br>
+                    <input type="button" value="1" onclick="addInput(1)"  class="btn"/>
+                    <input type="button" value="2" onclick="addInput(2)"  class="btn"/>
+                    <input type="button" value="3" onclick="addInput(3)"  class="btn"/>
+                    <br>
+                    <input type="button" value="0" onclick="addInput(0)"  class="btn zero"/>
+                    <input type="button" value="." onclick="addInput('.')"  class="btn"/>
+                </div>
+                <div class="right_btns">
+                    <input type="button" value="X" onclick="addInput('*')"  class="btn" id="operator"/>
+                    <input type="button" value="-" onclick="addInput('-')"  class="btn" id="operator"/>
+                    <input type="button" value="+" onclick="addInput('+')"  class="btn" id="operator"/>
+                    <input type="button" value="=" onclick="calculate()"  class="btn equal" id="operator"/>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
